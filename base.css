@@ -5,13 +5,17 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 1rem black;
+    background-color: white;
 }
 .main {
     display: flex;
@@ -20,19 +24,90 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: green;
     padding: 10px 20px 0px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid black;
+}
+.menu ul{
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+.menu ul li{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.menu ul li:hover{
+    filter: brightness(1.1);
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
 }
 .header {
-    background-color: rgb(5, 108, 108);
     min-height: 150px;
+    border-radius: 0 10px 0 0;
+}
+.header img {
+    border-radius: 0 10px 0 0;
+    height: 380px;
 }
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
 }
+h1 {
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px black;
+}
 .footer {
-    background-color: rgb(99, 56, 240);
     min-height: 150px;
+    border-radius: 0 0 10px 0;
+    padding: 20px;
+    background-color: gray;
+    filter: brightness(1.2);
+}
+.header_footer {
+    height: 50px;
+    position: relative;
+}
+.header_title {
+    height: 100%;
+    width: 49%;
+}
+.header_title h2{
+    margin: 0;
+    margin-top: 30px;
+}
+.header_icons {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header_icons img{
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container_footer div{
+    width: 24%;
+    float: left;
+    margin-left: 5px;
+}
+.container_footer div ul{
+    list-style-type: none;
 }
