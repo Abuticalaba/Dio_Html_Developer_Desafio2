@@ -111,3 +111,44 @@ h1 {
 .container_footer div ul{
     list-style-type: none;
 }
+
+/*Atendimento*/
+.content table {    
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.content table th{
+    background-color: gray;
+    border-bottom: 1px solid black;
+}
+
+/*Contato*/
+.content form {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.display {
+    display: block;
+    margin-bottom: 10px;
+    width: 70%;
+}
+.btn {
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gray;
+    filter: brightness(1.3);
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    margin-left: 25px;
+}
+.btn:hover{
+    background-color: gray;
+    filter: brightness(1);
+}
